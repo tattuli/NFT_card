@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 body {
@@ -140,10 +140,15 @@ h1:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  transform: translate(-50%, -30%);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .container:hover .overlay {
   opacity: 0.5;
+}
+
+.container:hover .view {
+  opacity: 1;
 }
