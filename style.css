@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-container {
+  width: 350px;
+  height: 596px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 302px;
+  height: 302px;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: hsl(0, 0%, 100%);
+  margin-top: 24px;
+  width: 302px;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+.text {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 16px;
+  width: 302px;
+  color: hsl(215, 51%, 70%);
+}
+
+
+.details {
+  display: flex;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 24px;
+  align-items: center;
+}
+
+.price {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 116px; 
+  margin-left: 6px;
+}
+
+.countdown {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+  margin-left: 6px;
+  margin-bottom: 2px;
+}
+
+.border {
+  width: 302px;
+  height: 1px;
+  background-color: hsl(215, 32%, 27%);
+  margin-top: 24px;
+}
+
+.author-details {
+  display: flex;
+  align-items: center;
+  font-family: 'Outfit', sans-serif;
+  margin-top: 16px;
+  margin-right: 84px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.avatar {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.author {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+  margin-left: 16px;
+  margin-right: 5px;
+}
+
+.author-name {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+.author-name:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 302px;
+  height: 302px;
+  border-radius: 8px;
+  top: 24px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  background: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.container:hover .overlay {
+  opacity: 0.5;
+}
